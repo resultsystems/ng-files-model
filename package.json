@@ -1,0 +1,34 @@
+{
+  "name": "ng-files-model",
+  "version": "1.0.0",
+  "description": "modeling file(s) input with angularjs",
+  "main": "ng-files-model.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/resultsystems/ng-files-model.git"
+  },
+  "keywords": [
+    "angular",
+    "file",
+    "files",
+    "multiple",
+    "angular-files",
+    "ng-file-model",
+    "ng-files-model",
+    "angular-file-model",
+    "upload",
+    "multiple upload"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  },
+  "author": "Leandro Henrique <emtudo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/resultsystems/ng-files-model/issues"
+  },
+  "homepage": "https://github.com/resultsystems/ng-files-model#readme"
+}

@@ -1,0 +1,43 @@
+# ng-files-model
+----
+Angular File Model is a directive for angularjs to help you make a model for input file and you can send it to sever for next step.
+
+## Installation
+### Bower
+`> bower install ng-files-model --save`
+### npm
+`> npm install ng-files-model --save`
+
+## Model
+Result or return are :
+* lastModified : js millisecond date
+* lastModifiedDate : js date
+* name : file name
+* size : file size
+* type : file type
+* data : data url base64 of the file
+
+## Usage
+on application :
+`angular.module("myApp", ["ng-files-model"])`
+
+on html :
+one file:
+`<input type="file" ng-files-model="testFile" />`
+multiple files
+`<input type="file" ng-files-model="testFile" multiple />`
+
+Result :
+
+
+    {
+        "lastModified": 1475607121292,
+        "lastModifiedDate": "2015-08-03T06:39:32.000Z",
+        "name": "ng-files-model.txt",
+        "size": 32,
+        "type": "text/plain",
+        "data": "data:text/plain;base64,VXBsb2FkIGZpbGVzIG1vZGVsIHdpdGggYW5ndWxhcgo="
+    }
+   
+
+Code inspired from https://github.com/mistralworks/ng-file-model
