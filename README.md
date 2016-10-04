@@ -3,8 +3,6 @@
 Angular File Model is a directive for angularjs to help you make a model for input file and you can send it to sever for next step.
 
 ## Installation
-### Bower
-`> bower install ng-files-model --save`
 ### npm
 `> npm install ng-files-model --save`
 

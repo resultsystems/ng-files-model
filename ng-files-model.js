@@ -1,3 +1,10 @@
+/*
+* @author: Leandro Henrique Reis <emtudo@gmail.com>
+* @date:   2016-10-04 16:05:33
+* @last modified by:   Leandro Henrique Reis
+* @last modified time: 2016-10-04 16:19:34
+*/
+
 (function () {
     'use strict';
     angular.module('ng-files-model', [])
