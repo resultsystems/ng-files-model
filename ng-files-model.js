@@ -2,7 +2,7 @@
 * @author: Leandro Henrique Reis <emtudo@gmail.com>
 * @date:   2016-10-04 16:05:33
 * @last modified by:   Leandro Henrique Reis
-* @last modified time: 2016-10-04 16:21:31
+* @last modified time: 2016-10-04 16:55:05
 */
 
 (function () {
@@ -27,7 +27,7 @@
                                 name: changeEvent.target.files[index].name,
                                 size: changeEvent.target.files[index].size,
                                 type: changeEvent.target.files[index].type,
-                                data: loadEvent.target.result
+                                file: loadEvent.target.result.replace('data:'+changeEvent.target.files[index].type+';base64,','')
                             });
                         });
                     }

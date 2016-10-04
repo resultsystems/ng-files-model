@@ -34,7 +34,7 @@ Result :
         "name": "ng-files-model.txt",
         "size": 32,
         "type": "text/plain",
-        "data": "data:text/plain;base64,VXBsb2FkIGZpbGVzIG1vZGVsIHdpdGggYW5ndWxhcgo="
+        "file": "VXBsb2FkIGZpbGVzIG1vZGVsIHdpdGggYW5ndWxhcgo="
     }
    
 
