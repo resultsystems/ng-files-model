@@ -4,7 +4,7 @@ Angular File Model is a directive for angularjs to help you make a model for inp
 
 ## Installation
 ### npm
-`> npm install ng-files-model --save`
+`npm install ng-files-model --save`
 
 ## Model
 Result or return are :
@@ -20,10 +20,7 @@ on application :
 `angular.module("myApp", ["ng-files-model"])`
 
 on html :
-one file:
-`<input type="file" ng-files-model="testFile" />`
-multiple files
-`<input type="file" ng-files-model="testFile" multiple />`
+`<input type="file" ng-files-model="testFile" callback="function" data="data" multiple="mulplite" />`
 
 Result :
 
@@ -38,4 +35,14 @@ Result :
     }
    
 
+
+### Parâmetros
+
+|parametro|tipo|descrição|obrigatório|padrão|
+|:-------------|:----|:-----------|:-----------------|:----|
+|callback|function|função executada após conversão dos arquivos|não| |
+|data|object|Objeto enviado como segundo parãmetro na função callback|não| |
+|multiple|tag|Tag html para multiplos arquivos|não| |
+
 Code inspired from https://github.com/mistralworks/ng-file-model
+
