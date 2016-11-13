@@ -20,7 +20,7 @@ on application :
 `angular.module("myApp", ["ng-files-model"])`
 
 on html :
-`<input type="file" ng-files-model="testFile" callback="function" data="data" multiple="mulplite" />`
+`<input type="file" ng-files-model model="testFile" callback="function" data="data" multiple="mulplite" />`
 
 Result :
 
@@ -43,6 +43,7 @@ Result :
 |callback|function|função executada após conversão dos arquivos|não| |
 |data|object|Objeto enviado como segundo parãmetro na função callback|não| |
 |multiple|tag|Tag html para multiplos arquivos|não| |
+|model|array|object|Array ou objeto que recebe o resultado|não| |
 
 Code inspired from https://github.com/mistralworks/ng-file-model
 

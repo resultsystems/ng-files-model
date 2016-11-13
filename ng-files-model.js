@@ -2,7 +2,7 @@
 * @author: Leandro Henrique Reis <emtudo@gmail.com>
 * @date:   2016-10-04 16:05:33
 * @last modified by:   Leandro Henrique Reis
-* @last modified time: 2016-11-13 16:34:47
+* @last modified time: 2016-11-13 19:35:53
 */
 
 (function () {
@@ -13,14 +13,17 @@
         restrict: 'A',
         scope: {
             callback: '=',
-            data: '='
+            data: '=',
+            model: '='
         },
         link: function (scope, element, attrs) {
-            var model = $parse(attrs.ngFilesModel);
             var isMultiple = attrs.multiple;
-            var modelSetter = model.assign;
             element.bind('change', function (changeEvent) {
-                var values = [];
+                if (isMultiple) {
+                    scope.model=[];
+                } else {
+                    scope.model={};
+                }
                 angular.forEach(element[0].files, function (item, index) {
                     var reader = new FileReader();
                     reader.onload = function (loadEvent) {
@@ -33,20 +36,17 @@
                                 type: changeEvent.target.files[index].type,
                                 file: loadEvent.target.result.replace('data:'+changeEvent.target.files[index].type+';base64,','')
                             }
-                            values.push(data);
                             if (typeof(scope.callback)=='function') {
                                 scope.callback(data, scope.data);
+                            }
+                            if (isMultiple) {
+                                scope.model.push(data);
+                            } else {
+                                scope.model=data;
                             }
                         });
                     }
                     reader.readAsDataURL(item);
-                });
-                scope.$apply(function () {
-                    if (isMultiple) {
-                        modelSetter(scope, values);
-                    } else {
-                        modelSetter(scope, values[0]);
-                    }
                 });
             });
         }
