@@ -1,6 +1,6 @@
 {
   "name": "ng-files-model",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/resultsystems/ng-files-model",
   "author": "Leandro Henrique <emtudo@gmail.com>",
   "description": "modeling file(s) input with angularjs",

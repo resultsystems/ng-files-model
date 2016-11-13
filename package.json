@@ -1,6 +1,6 @@
 {
   "name": "ng-files-model",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "modeling file(s) input with angularjs",
   "main": "ng-files-model.js",
   "scripts": {
