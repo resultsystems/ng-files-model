@@ -1,3 +1,5 @@
+# Não uso mais Angular, então não consigo dá mais manutenção se necessrio, pacote abandonado!
+
 # ng-files-model
 ----
 Angular File Model is a directive for angularjs to help you make a model for input file and you can send it to sever for next step.
